@@ -34,31 +34,31 @@
 				id: 1,
 				url: '/fuat-sezgin.jpg',
 				caption: "Frankfurt Üniversitesi'ndeki çalışma masasında (1965)",
-				category: 'academic'
+				category: 'Akademik'
 			},
 			{
 				id: 2,
 				url: '/muze.jpg',
 				caption: 'İslam Bilim Tarihi Müzesi (2019)',
-				category: 'museum'
+				category: 'Müze'
 			},
 			{
 				id: 3,
 				url: '/eser.jpg',
-				caption: 'Geschichte des Arabischen Schrifttums eseri üzerinde çalışırken',
-				category: 'research'
+				caption: 'Geschichte des Arabischen Schrifttums eseri',
+				category: 'Araştırma'
 			},
 			{
 				id: 4,
 				url: '/sempozyum.jpg',
 				caption: 'Bilim Tarihi Konferansında (1980)',
-				category: 'academic'
+				category: 'Akademik'
 			},
 			{
 				id: 5,
 				url: '/uni.jpg',
 				caption: 'İstanbul Üniversitesi yılları (1943)',
-				category: 'youth'
+				category: 'Gençliği'
 			}
 		]
 	});
@@ -199,7 +199,7 @@
 
 	<!-- İçerik -->
 	<div class="container relative z-10 mx-auto">
-		<h1 class="mb-8 text-center text-5xl font-bold tracking-tight text-blue-800">
+		<h1 class="mb-8 text-center text-5xl font-bold tracking-tight text-blue-600">
 			Prof. Dr. Fuat Sezgin
 		</h1>
 
