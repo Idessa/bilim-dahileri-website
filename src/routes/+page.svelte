@@ -32,31 +32,31 @@
 		gallery: [
 			{
 				id: 1,
-				url: '/images/fuat-sezgin/calisma-masasi.jpg',
+				url: '/fuat-sezgin.jpg',
 				caption: "Frankfurt Üniversitesi'ndeki çalışma masasında (1965)",
 				category: 'academic'
 			},
 			{
 				id: 2,
-				url: '/images/fuat-sezgin/muzede.jpg',
-				caption: "İslam Bilim Tarihi Müzesi'nde öğrencilerle (2010)",
+				url: '/muze.jpg',
+				caption: 'İslam Bilim Tarihi Müzesi (2019)',
 				category: 'museum'
 			},
 			{
 				id: 3,
-				url: '/images/fuat-sezgin/kitaplar.jpg',
+				url: '/eser.jpg',
 				caption: 'Geschichte des Arabischen Schrifttums eseri üzerinde çalışırken',
 				category: 'research'
 			},
 			{
 				id: 4,
-				url: '/images/fuat-sezgin/konferans.jpg',
+				url: '/sempozyum.jpg',
 				caption: 'Bilim Tarihi Konferansında (1980)',
 				category: 'academic'
 			},
 			{
 				id: 5,
-				url: '/images/fuat-sezgin/genclik.jpg',
+				url: '/uni.jpg',
 				caption: 'İstanbul Üniversitesi yılları (1943)',
 				category: 'youth'
 			}
@@ -72,14 +72,14 @@
 				title: '1. Perde: Gençlik Yılları',
 				description: "Bitlis'ten İstanbul'a uzanan yolculuk...",
 				duration: '45 dakika',
-				image: '/images/theater/act1.jpg',
+				image: '/tiyatro1.jpg',
 				highlights: ['Çocukluk anıları', 'Eğitim hayatının başlangıcı', "İstanbul'a geliş"]
 			},
 			{
 				title: '2. Perde: Akademik Hayat',
 				description: 'Hellmut Ritter ile tanışma ve bilim tarihine adanmış bir ömür...',
 				duration: '40 dakika',
-				image: '/images/theater/act2.jpg',
+				image: '/tiyatro2.jpg',
 				highlights: [
 					'Hocası ile ilk karşılaşma',
 					'Akademik çalışmaların başlangıcı',
@@ -90,7 +90,7 @@
 				title: '3. Perde: Frankfurt Yılları',
 				description: "Almanya'da geçen yıllar ve büyük başarılar...",
 				duration: '35 dakika',
-				image: '/images/theater/act3.jpg',
+				image: '/tiyatro3.jpg',
 				highlights: ['Enstitünün kuruluşu', 'Büyük eserlerin yazımı', 'Dünya çapında tanınma']
 			}
 		],
@@ -112,37 +112,6 @@
 				time: '19:00',
 				venue: 'Ana Salon',
 				availability: 'Müsait'
-			}
-		],
-		cast: [
-			{
-				name: 'Ahmet Yılmaz',
-				role: 'Genç Fuat Sezgin',
-				image: '/images/theater/cast1.jpg'
-			},
-			{
-				name: 'Mehmet Demir',
-				role: 'Olgun Fuat Sezgin',
-				image: '/images/theater/cast2.jpg'
-			},
-			{
-				name: 'Ayşe Kaya',
-				role: 'Ursula Sezgin',
-				image: '/images/theater/cast3.jpg'
-			}
-		],
-		gallery: [
-			{
-				url: '/images/theater/rehearsal1.jpg',
-				caption: 'Provalardan bir kare'
-			},
-			{
-				url: '/images/theater/rehearsal2.jpg',
-				caption: 'Kostüm provaları'
-			},
-			{
-				url: '/images/theater/stage.jpg',
-				caption: 'Sahne tasarımı'
 			}
 		]
 	});
@@ -322,7 +291,7 @@
 					<div class="mb-8 grid gap-8 lg:grid-cols-2">
 						<div class="relative h-96 overflow-hidden rounded-xl">
 							<img
-								src="/images/fuat-sezgin/hero.jpg"
+								src="/fuat-sezgin.jpg"
 								alt="Prof. Dr. Fuat Sezgin"
 								class="h-full w-full object-cover"
 							/>
@@ -347,11 +316,7 @@
 				<div class="space-y-12">
 					<!-- Hero Section -->
 					<div class="relative mb-12 h-96 overflow-hidden rounded-2xl">
-						<img
-							src="/images/theater/hero.jpg"
-							alt="Tiyatro gösterisi"
-							class="h-full w-full object-cover"
-						/>
+						<img src="/anaresim.jpg" alt="Tiyatro gösterisi" class="h-full w-full object-cover" />
 						<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent">
 							<div class="absolute bottom-8 left-8 right-8">
 								<h2 class="text-4xl font-bold text-white">{theaterContent.title}</h2>
@@ -408,51 +373,6 @@
 									<span class="rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800">
 										{show.availability}
 									</span>
-								</div>
-							{/each}
-						</div>
-					</section>
-
-					<!-- Oyuncu Kadrosu -->
-					<section class="space-y-6">
-						<h3 class="text-2xl font-bold text-gray-800">Oyuncu Kadrosu</h3>
-						<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-							{#each theaterContent.cast as actor}
-								<div class="group relative overflow-hidden rounded-lg">
-									<img
-										src={actor.image}
-										alt={actor.name}
-										class="h-72 w-full object-cover transition-transform duration-300 group-hover:scale-105"
-									/>
-									<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent">
-										<div class="absolute bottom-4 left-4">
-											<p class="text-lg font-semibold text-white">{actor.name}</p>
-											<p class="text-sm text-gray-200">{actor.role}</p>
-										</div>
-									</div>
-								</div>
-							{/each}
-						</div>
-					</section>
-
-					<!-- Galeri -->
-					<section class="space-y-6">
-						<h3 class="text-2xl font-bold text-gray-800">Provalardan Kareler</h3>
-						<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-							{#each theaterContent.gallery as photo}
-								<div class="group relative overflow-hidden rounded-lg">
-									<img
-										src={photo.url}
-										alt={photo.caption}
-										class="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-105"
-									/>
-									<div
-										class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100"
-									>
-										<p class="absolute bottom-4 left-4 right-4 text-sm text-white">
-											{photo.caption}
-										</p>
-									</div>
 								</div>
 							{/each}
 						</div>
